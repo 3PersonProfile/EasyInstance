@@ -1,0 +1,12 @@
+--So, to use EasyInstance you need to first get the module from "https://create.roblox.com/store/asset/18468448781/EasyInstance".
+--And ill give you an example line you can use with it. (can put anywhere, i just choose to put in serverscript service.)
+local EI = require(game.ServerScriptService:FindFirstChild("EasyInstance"))
+EI.create("Part", --What to create
+	"Red flip/flop", --What color
+	workspace, --Where it is created
+	0, --Its Transparency
+	0,5,0, --Its Position (In vector3)
+	true --If it should be anchored
+)
+--Please note, if it cannot have a certain property it will return that as nil.
+i.e: A boolvalue with 1 transparency would be nil.
